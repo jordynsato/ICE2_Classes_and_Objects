@@ -99,8 +99,4 @@ public class Book {
 	public String toString() {
 		return title + " by " + author + " was published on " + publicationDate + ".";
 	}
-	
-	public static ArrayList<Book> displayAllBooks() {
-		return null;
-	}
 }
