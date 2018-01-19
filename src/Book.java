@@ -11,7 +11,7 @@ public class Book {
 
 	//Fields
 	private String title, author, publicationDate;
-	private static ArrayList<Book> library = new ArrayList<Book>();
+	//private static ArrayList<Book> library = new ArrayList<Book>();
 	
 	//Constructors
 	/**
@@ -99,8 +99,13 @@ public class Book {
 	public String toString() {
 		return title + " by " + author + " was published on " + publicationDate + ".";
 	}
+	/*
+	public static void addBookToList(Book b){
+		library.add(b);
+	}
 	
 	public static ArrayList<Book> displayAllBooks() {
-		return null;
+		return library;
 	}
+	*/
 }
