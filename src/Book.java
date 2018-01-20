@@ -1,17 +1,14 @@
-import java.util.ArrayList;
-
 /*
  * This class creates a Book object that contain a title, author, and publication date.
  * All of which can be seen via String form.
  * 
  * Authors: Serena Ing, Nana Mimura, Jordyn Sato
- * Last Update: 1/18/18 at 11:30 AM
+ * Last Update: 1/19/18 at 5:42 PM
  */
 public class Book {
 
 	//Fields
 	private String title, author, publicationDate;
-	//private static ArrayList<Book> library = new ArrayList<Book>();
 	
 	//Constructors
 	/**
@@ -99,14 +96,4 @@ public class Book {
 	public String toString() {
 		return title + " by " + author + " was published on " + publicationDate + ".";
 	}
-
-	/*
-	public static void addBookToList(Book b){
-		library.add(b);
-	}
-	
-	public static ArrayList<Book> displayAllBooks() {
-		return library;
-	}
-	*/
 }
