@@ -9,7 +9,7 @@ public class Book {
 
 	//Fields
 	private String title, author, publicationDate;
-	
+
 	//Constructors
 	/**
 	 * This creates a book with an empty title, author, and publication date.
@@ -19,7 +19,7 @@ public class Book {
 		author = "";
 		publicationDate = "";
 	}
-	
+
 	/**
 	 * This creates a book with title t, author a, and publication date p.
 	 * 
@@ -32,7 +32,7 @@ public class Book {
 		author = a;
 		publicationDate = p;
 	}
-	
+
 	//Methods
 	/**
 	 * This method returns the title of the book.
@@ -42,7 +42,7 @@ public class Book {
 	public String getTitle() {
 		return title;
 	}
-	
+
 	/**
 	 * This method returns the author of the book.
 	 * 
@@ -51,7 +51,7 @@ public class Book {
 	public String getAuthor() {
 		return author;
 	}
-	
+
 	/**
 	 * This method returns the publication date of the book.
 	 * 
@@ -60,7 +60,7 @@ public class Book {
 	public String getPublicationDate() {
 		return publicationDate;
 	}
-	
+
 	/**
 	 * This method sets the title of the book.
 	 * 
@@ -69,7 +69,7 @@ public class Book {
 	public void setTitle(String t) {
 		title = t;
 	}
-	
+
 	/**
 	 * This method sets the author of the book.
 	 * 
@@ -78,7 +78,7 @@ public class Book {
 	public void setAuthor(String a) {
 		author = a;
 	}
-	
+
 	/**
 	 * This method sets the publication date of the book.
 	 * 
@@ -87,7 +87,7 @@ public class Book {
 	public void setPublicationDate(String p) {
 		publicationDate = p;
 	}
-	
+
 	/**
 	 * This method returns the String form of a Book.
 	 * 
