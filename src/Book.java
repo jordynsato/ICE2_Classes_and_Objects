@@ -99,6 +99,7 @@ public class Book {
 	public String toString() {
 		return title + " by " + author + " was published on " + publicationDate + ".";
 	}
+
 	/*
 	public static void addBookToList(Book b){
 		library.add(b);

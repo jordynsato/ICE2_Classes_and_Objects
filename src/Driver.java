@@ -68,7 +68,9 @@ public class Driver {
                                         String publication = scan.nextLine();
   
                                         Book newBook = new Book(title, author, publication);
-    
+
+                                        addBook(newBook);
+                                        
                                         System.out.println("Would you like to add another book?(Y/N): ");
                                         if (!scan.hasNextLine())
                                                 System.out.println("Thank you for using this program. Goodbye.");
@@ -76,6 +78,7 @@ public class Driver {
                                                 addNewBook = scan.nextLine();
                                                 if (!addNewBook.equalsIgnoreCase("Y")) {
                                                         addNewBook = "N";
+                                                        displayLibrary();
                                                         System.out.println("Thank you for using this program. Goodbye.");
                                                 }
                                         }
