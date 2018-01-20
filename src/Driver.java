@@ -82,6 +82,7 @@ public class Driver {
                                 }
                         }
                 }
+	scan.close();
 
         }
 }
