@@ -7,7 +7,7 @@ import java.util.Scanner;
  * order by title.
  * 
  * Authors: Serena Ing, Nana Mimura, Jordyn Sato
- * Last Update: 1/19/18 at 5:43 PM
+ * Last Update: 1/19/18 at 8:54 PM
  */
 public class Driver {
 
@@ -148,6 +148,6 @@ public class Driver {
 				}
 			}
 		}
-
+		scan.close();
 	}
 }
