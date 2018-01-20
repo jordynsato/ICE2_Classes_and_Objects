@@ -1,26 +1,9 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Driver {
 
 	private static ArrayList<Book> library = new ArrayList<Book>();
-	
-	public static void main(String[] args) {
-		/*  --test info--
-		Book sth1 = new Book("Title", "Author", "Jan 2018");
-		addBook(sth1);
-		
-		Book sth2 = new Book("Start", "Ar", "Mar 2018");
-		addBook(sth2);
-		
-		Book sth3 = new Book("read", "adsf", "Apr 2018");
-		addBook(sth3);
-		
-		Book sth4 = new Book("read", "brb", "Apr 2018");
-		addBook(sth4);
-		
-		displayLibrary();
-		*/
-	}
 	
 	public static void addBook(Book b) {
 		if (library.size()== 0)
@@ -46,9 +29,7 @@ public class Driver {
 				{
 					library.add(b);
 				}
-			
 			}
-			
 		}
 	}
 	
@@ -59,7 +40,48 @@ public class Driver {
 			System.out.println("Author: " + b.getAuthor());
 			System.out.println("Publication Date: " + b.getPublicationDate() + "\n");
 			}
-		
 	}
 
+        public static void main(String[] args) {
+  
+                Scanner scan = new Scanner(System.in);
+  
+                System.out.println("Hello, welcome to the library database.");
+                System.out.println("Would you like to add a new book to the database?(Y/N): ");
+                String addNewBook = "";
+                if (!scan.hasNextLine())
+                        System.out.println("Thank you for using this program. Goodbye.");
+                else {
+                        addNewBook = scan.nextLine();
+                        if (!addNewBook.equalsIgnoreCase("Y"))
+                                System.out.println("Thank you for using this program. Goodbye.");
+                        else {
+                                while (addNewBook.equalsIgnoreCase("Y")) {
+                                        System.out.println("Please enter the title of the book: ");
+                                        String title = scan.nextLine();
+  
+                                        System.out.println("Please enter the author of the book: ");
+                                        String author = scan.nextLine();
+  
+                                        System.out.println("Please enter the month and year the book was published, with the month written" + 
+                                                           " out and the year as a number: ");
+                                        String publication = scan.nextLine();
+  
+                                        Book newBook = new Book(title, author, publication);
+    
+                                        System.out.println("Would you like to add another book?(Y/N): ");
+                                        if (!scan.hasNextLine())
+                                                System.out.println("Thank you for using this program. Goodbye.");
+                                        else {
+                                                addNewBook = scan.nextLine();
+                                                if (!addNewBook.equalsIgnoreCase("Y")) {
+                                                        addNewBook = "N";
+                                                        System.out.println("Thank you for using this program. Goodbye.");
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+        }
 }
