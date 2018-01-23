@@ -7,13 +7,12 @@ import java.util.Scanner;
  * order by title.
  * 
  * Authors: Serena Ing, Nana Mimura, Jordyn Sato
- * Last Update: 1/19/18 at 8:54 PM
+ * Last Update: 1/22/18 at 11:52 PM
  */
 public class Driver {
 
 	//Fields
 	private static ArrayList<Book> library = new ArrayList<Book>();
-
 
 	//Methods
 	/**
@@ -72,10 +71,10 @@ public class Driver {
 			System.out.println("Thank you for using this program. Goodbye.");
 		else {
 			addNewBook = scan.nextLine();
-			if (!addNewBook.equalsIgnoreCase("Y"))
+			if (!addNewBook.equalsIgnoreCase("Y") && !addNewBook.equalsIgnoreCase("Yes"))
 				System.out.println("Thank you for using this program. Goodbye.");
 			else {
-				while (addNewBook.equalsIgnoreCase("Y")) {
+				while (addNewBook.equalsIgnoreCase("Y") || addNewBook.equalsIgnoreCase("Yes")) {
 					System.out.println("Please enter the title of the book: ");
 					String title = scan.nextLine();
 
@@ -95,7 +94,7 @@ public class Driver {
 						System.out.println("Thank you for using this program. Goodbye.");
 					else {
 						addNewBook = scan.nextLine();
-						if (!addNewBook.equalsIgnoreCase("Y")) {
+						if (!addNewBook.equalsIgnoreCase("Y") && !addNewBook.equalsIgnoreCase("Yes")) {
 							addNewBook = "N";
 							displayLibrary();
 							System.out.println("Thank you for using this program. Goodbye.");
